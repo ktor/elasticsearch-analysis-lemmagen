@@ -1,0 +1,9 @@
+# Elasticsearch 8.18 Entitlement Policy
+# Plugin cita .lem lexikon subory z config/lemmagen/
+ALL-UNNAMED:
+  - files:
+      - path: "${es.config}/lemmagen"
+        mode: read
+  - files:
+      - path: "${es.config}/lemmagen/*"
+        mode: read
