@@ -4,20 +4,20 @@ The LemmaGen Analysis plugin provides [jLemmaGen lemmatizer](https://github.com/
 
 [jLemmaGen](https://github.com/hlavki/jlemmagen) is Java implementation of [LemmaGen](http://lemmatise.ijs.si/) project (originally written in C++ and C#).
 
+> **Elasticsearch 8.19 fork** - This fork ([ktor/elasticsearch-analysis-lemmagen](https://github.com/ktor/elasticsearch-analysis-lemmagen)) adds support for Elasticsearch 8.19.0. See [releases](https://github.com/ktor/elasticsearch-analysis-lemmagen/releases) for pre-built plugin ZIPs.
+
 ## Instalation
 
 ### Plugin
 
-Beginning with elasticsearch 5 installation is following:
+For Elasticsearch 8.19:
 
 ```bash
-# specify elasticsearch version
-#
-export VERSION=6.0.0
-./bin/elasticsearch-plugin install https://github.com/vhyza/elasticsearch-analysis-lemmagen/releases/download/v$VERSION/elasticsearch-analysis-lemmagen-$VERSION-plugin.zip
+$ES_HOME/bin/elasticsearch-plugin install \
+  https://github.com/ktor/elasticsearch-analysis-lemmagen/releases/download/v8.19.0/elasticsearch-analysis-lemmagen-8.19.0-plugin.zip
 ```
 
-For older elasticsearch version see installation instructions in [**releases section**](https://github.com/vhyza/elasticsearch-analysis-lemmagen/releases).
+For older Elasticsearch versions see installation instructions in [**upstream releases**](https://github.com/vhyza/elasticsearch-analysis-lemmagen/releases).
 
 ### Lexicon
 
